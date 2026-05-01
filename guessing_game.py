@@ -59,14 +59,17 @@ def guess_game(attempt):
                 if attempt-5==0:
                     is_hard =False
                     print("Unfortunately you lost")
+                    print("Reload to play again")
             if guess_answer==number_guess :
                 print(f"You have {attempt-5} attempts remaining to guess the number.")
                 is_running=False
                 print(f"That's correct the number is {number_guess}")
+                print("Reload to play again")
         
        
 
         return attempt
+        
             
             
         
