@@ -13,13 +13,12 @@ def guess_game(attempt):
     if difficulty == "easy":
         
         print(f"You have {attempt} attempts remaining to guess the number.")
-        # is_true=True
+      
         is_running=True
         while is_running:
             guess_answer=int(input("Make a guess: "))
             
             if guess_answer != number_guess:
-            # while guess_answer != number_guess:
                 attempt-=1
                 if guess_answer>number_guess:
                     print(f"You have {attempt} attempts remaining to guess the number.")
